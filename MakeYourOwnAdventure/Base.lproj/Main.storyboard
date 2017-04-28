@@ -29,7 +29,7 @@
         <!--View Controller-->
         <scene sceneID="Gpw-OB-DoH">
             <objects>
-                <viewController id="777-KY-mXX" sceneMemberID="viewController">
+                <viewController id="777-KY-mXX" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aRJ-39-qFe"/>
                         <viewControllerLayoutGuide type="bottom" id="HWn-qE-VX2"/>
@@ -92,7 +92,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="fHC-Ha-BRv">
             <objects>
-                <viewController id="eRi-Xh-aXB" sceneMemberID="viewController">
+                <viewController id="eRi-Xh-aXB" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ybn-vE-h1q"/>
                         <viewControllerLayoutGuide type="bottom" id="duh-9Q-dP1"/>
@@ -104,10 +104,16 @@ What should she do?</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0A-ff-g6d">
                                 <rect key="frame" x="16" y="464" width="343" height="30"/>
                                 <state key="normal" title="Leap through the door and roar!"/>
+                                <connections>
+                                    <segue destination="538-Cf-sea" kind="show" id="O98-S9-xxh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gh8-lU-o3d">
                                 <rect key="frame" x="16" y="524" width="343" height="30"/>
                                 <state key="normal" title="Stalk to the door, peek down the hallway."/>
+                                <connections>
+                                    <segue destination="NSY-n3-Khd" kind="show" id="Ikt-dr-jwB"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oMs-yi-F3J">
                                 <rect key="frame" x="16" y="114" width="343" height="320"/>
@@ -149,7 +155,7 @@ What should she do?</string>
         <!--View Controller-->
         <scene sceneID="Dd3-M8-2O9">
             <objects>
-                <viewController id="03X-Tx-WoV" sceneMemberID="viewController">
+                <viewController id="03X-Tx-WoV" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tYG-FI-xCA"/>
                         <viewControllerLayoutGuide type="bottom" id="AUV-95-wNJ"/>
@@ -161,10 +167,16 @@ What should she do?</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLJ-vj-ZUw">
                                 <rect key="frame" x="16" y="464" width="343" height="30"/>
                                 <state key="normal" title="Leap through the door and roar!"/>
+                                <connections>
+                                    <segue destination="Y4q-T3-aky" kind="show" id="7AT-TX-xYQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXo-X2-rrd">
                                 <rect key="frame" x="16" y="524" width="343" height="30"/>
                                 <state key="normal" title="Stalk to the door, peek down the hallway."/>
+                                <connections>
+                                    <segue destination="Scy-M7-uMp" kind="show" id="gH3-pT-zU4"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rlx-NE-qJR">
                                 <rect key="frame" x="16" y="114" width="343" height="320"/>
@@ -202,6 +214,174 @@ What should she do?</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Gp-Wi-3sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1289" y="555"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Ma-hG-kfe">
+            <objects>
+                <viewController id="Y4q-T3-aky" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3P3-f7-qNR"/>
+                        <viewControllerLayoutGuide type="bottom" id="spK-El-0wO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9lP-fg-YP7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5CX-KK-k1j">
+                                <rect key="frame" x="16" y="114" width="343" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="vJo-8U-cIL"/>
+                                </constraints>
+                                <string key="text">An immense tiger 
+wakes in an empty 
+room. 
+
+A door opens into a hallway...
+
+What should she do?</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5CX-KK-k1j" firstAttribute="centerX" secondItem="9lP-fg-YP7" secondAttribute="centerX" id="90a-at-Vbm"/>
+                            <constraint firstItem="5CX-KK-k1j" firstAttribute="top" secondItem="3P3-f7-qNR" secondAttribute="bottom" constant="50" id="do0-zW-fba"/>
+                            <constraint firstItem="5CX-KK-k1j" firstAttribute="leading" secondItem="9lP-fg-YP7" secondAttribute="leadingMargin" id="ybb-38-hcZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ejh-I0-Dk6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ur9-SN-pyQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047" y="555"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OEv-zV-RaW">
+            <objects>
+                <viewController id="Scy-M7-uMp" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hqW-NW-zIT"/>
+                        <viewControllerLayoutGuide type="bottom" id="YKN-6O-zg8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jNF-e1-hMK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SZY-8K-aDr">
+                                <rect key="frame" x="16" y="114" width="343" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="XMH-wJ-cQS"/>
+                                </constraints>
+                                <string key="text">An immense tiger 
+wakes in an empty 
+room. 
+
+A door opens into a hallway...
+
+What should she do?</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SZY-8K-aDr" firstAttribute="top" secondItem="hqW-NW-zIT" secondAttribute="bottom" constant="50" id="Eb6-5R-QFa"/>
+                            <constraint firstItem="SZY-8K-aDr" firstAttribute="centerX" secondItem="jNF-e1-hMK" secondAttribute="centerX" id="Jh4-7c-NFu"/>
+                            <constraint firstItem="SZY-8K-aDr" firstAttribute="leading" secondItem="jNF-e1-hMK" secondAttribute="leadingMargin" id="cq9-Z7-2Tu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rwO-Cr-blk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1rV-bD-PRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046" y="1229"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="22O-55-g1M">
+            <objects>
+                <viewController id="NSY-n3-Khd" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9l0-vu-9Nf"/>
+                        <viewControllerLayoutGuide type="bottom" id="LTM-d6-fue"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3fg-dd-ru8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CpJ-PX-UPP">
+                                <rect key="frame" x="16" y="114" width="343" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="NO9-2P-hI1"/>
+                                </constraints>
+                                <string key="text">An immense tiger 
+wakes in an empty 
+room. 
+
+A door opens into a hallway...
+
+What should she do?</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CpJ-PX-UPP" firstAttribute="centerX" secondItem="3fg-dd-ru8" secondAttribute="centerX" id="Y5I-un-5ds"/>
+                            <constraint firstItem="CpJ-PX-UPP" firstAttribute="top" secondItem="9l0-vu-9Nf" secondAttribute="bottom" constant="50" id="gOz-q6-o7Q"/>
+                            <constraint firstItem="CpJ-PX-UPP" firstAttribute="leading" secondItem="3fg-dd-ru8" secondAttribute="leadingMargin" id="ier-5c-gCF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="OUf-Cl-NoM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwg-21-k4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046" y="-144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3N0-V3-DFJ">
+            <objects>
+                <viewController id="538-Cf-sea" customClass="MYOAViewController" customModule="MakeYourOwnAdventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JsK-An-Uio"/>
+                        <viewControllerLayoutGuide type="bottom" id="9qR-Pc-n0G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3fv-QJ-KRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z6l-H7-JfY">
+                                <rect key="frame" x="16" y="114" width="343" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="NUr-yg-PB6"/>
+                                </constraints>
+                                <string key="text">An immense tiger 
+wakes in an empty 
+room. 
+
+A door opens into a hallway...
+
+What should she do?</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z6l-H7-JfY" firstAttribute="leading" secondItem="3fv-QJ-KRQ" secondAttribute="leadingMargin" id="2Pd-eC-C61"/>
+                            <constraint firstItem="Z6l-H7-JfY" firstAttribute="top" secondItem="JsK-An-Uio" secondAttribute="bottom" constant="50" id="beo-Ia-4yu"/>
+                            <constraint firstItem="Z6l-H7-JfY" firstAttribute="centerX" secondItem="3fv-QJ-KRQ" secondAttribute="centerX" id="yLL-LB-D6a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QhL-7c-9oz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcd-wx-wGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2046" y="-806"/>
         </scene>
     </scenes>
 </document>
